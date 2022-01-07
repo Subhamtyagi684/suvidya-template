@@ -975,6 +975,8 @@ a:focus {
   color: white; 
 }
 
+.service_container p {text-align: justify !important;}
+
 .flip-card-inner .img-box {
   width: 100%;
   min-width: 75px;
