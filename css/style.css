@@ -458,7 +458,7 @@ a:focus {
   transition: all 0.3s;
 }
 
-.service_section .box .detail-box h5 {
+.service_section .box .detail-box h5, .service_section .detail-box h5 {
   font-weight: bold;
   text-transform: uppercase;
   color: #ff8403;
@@ -918,5 +918,74 @@ a:focus {
 
 .footer_section p a {
   color: inherit;
+}
+
+
+.flip-card {
+	
+  /* background-color: transparent; */
+  width: 100%;
+  height: 200px;
+  perspective: 1000px;
+  margin-top: 45px;
+}
+
+.new_box {perspective: 1000px;}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: white;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  padding: 25px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff8403;
+}
+
+.flip-card-back {
+  background-color: #ff8403;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.service_section .flip-card-back .back-box {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white; 
+}
+
+.flip-card-inner .img-box {
+  width: 100%;
+  min-width: 75px;
+  height: 75px;
+  margin-bottom: 15px;
+}
+
+.flip-card-inner .img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 /*# sourceMappingURL=style.css.map */
