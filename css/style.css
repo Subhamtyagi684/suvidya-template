@@ -352,7 +352,7 @@ a:focus {
 
 .slider_section .img-box img {
   width: 100%;
-  max-width: 375px;
+  max-width: 425px;
 }
 
 .slider_section .carousel_btn-box {
@@ -967,6 +967,16 @@ a:focus {
   background-color: #ff8403;
   color: white;
   transform: rotateY(180deg);
+  position: relative;
+}
+
+.flip-card .back-box {
+  position: absolute;
+  top:50%;
+  left:50%;
+  width: 100%;
+  transform: translate(-50%,-50%);
+  padding: 10px;
 }
 
 .service_section .flip-card-back .back-box {
